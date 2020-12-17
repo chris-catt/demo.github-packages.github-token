@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <PackageId>demo.github-packages.github-token</PackageId>
-    <Version>0.0.0.1</Version>
+    <Version>0.0.0.2</Version>
     <Authors>Chris Catt</Authors>
     <Title>Demo to show GitHub Packages using GitHub Token</Title>
     <PackageDescription>Demo to show how you can use a GitHub Token instead of a PAT to publish Nugets to GitHub Packages</PackageDescription>

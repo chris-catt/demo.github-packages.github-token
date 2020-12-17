@@ -9,6 +9,7 @@ env:
   SOURCE_FOLDER: ./StringLibrary/
   NUGET_FOLDER: ./StringLibrary/bin/Release
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  OWNER: chris-catt
 
 jobs:
   Deploy-Package:
@@ -23,5 +24,5 @@ jobs:
           dotnet pack --configuration Release
         shell: bash
       - name: Publish Nuget to GitHub Packages
-        run: dotnet nuget push $NUGET_FOLDER/*.nupkg -s https://nuget.pkg.github.com/chris-catt -k $GITHUB_TOKEN
+        run: dotnet nuget push $NUGET_FOLDER/*.nupkg -s https://nuget.pkg.github.com/$OWNER -k $GITHUB_TOKEN
         shell: bash
