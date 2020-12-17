@@ -7,7 +7,7 @@ on:
 
 env:
   SOURCE_FOLDER: ./StringLibrary/
-  NUGET_FOLDER: ./StringLibrary/bin/Release/
+  NUGET_FOLDER: ./StringLibrary/bin/Release
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
